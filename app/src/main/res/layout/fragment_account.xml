@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#404040">
+
+    <LinearLayout
+        android:id="@+id/linrear_edittxt"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:orientation="vertical"
+        android:layout_weight="0">
+
+        <EditText
+            android:id="@+id/useer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="User Name"
+            android:padding="16dp"
+            android:textColorHint="#000"
+            android:background="#F3EFEF"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:padding="16dp"
+            android:textColorHint="#000"
+            android:background="#F3EFEF"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:id="@+id/logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Log in"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:background="#FFA000"
+            android:textColor="#F5F0F0"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

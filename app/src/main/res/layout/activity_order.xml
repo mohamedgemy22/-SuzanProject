@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:orientation="vertical"
+  android:weightSum="5"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:background="@drawable/custome2"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اطلب الدواء"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="ادخل الاسم"
+        android:textSize="30sp"
+        android:layout_weight="0.25"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:hint="ادخل رقم الهاتف"
+        android:textSize="30sp"
+        android:layout_weight="0.25"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adress"
+        android:hint="عنوانك بالتفصيل"
+        android:textSize="30sp"
+        android:layout_weight="0.25"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/image"
+        android:src="@drawable/ic_image_black_24dp"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:weightSum="0.5"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:text="ارسل البيانات"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/custom3"
+        android:layout_weight="0.25"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/take"
+        android:textSize="20dp"
+        android:text="تصوير الروشتة"
+        android:textColor="#fff"
+        android:background="@drawable/custom3"
+        android:layout_weight="0.25"/>
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:background="@drawable/custome">
+
+ </LinearLayout>
+
+</LinearLayout>

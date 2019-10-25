@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comunication"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@drawable/custome2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/backtomain"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="تواصل معنا"
+                android:textColor="#fff"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome"
+        app:tabSelectedTextColor="#fff"
+        android:id="@+id/tablayout"
+        app:tabTextColor="#fff">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="السوشيال ميديا" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/phones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أرقام هواتفنا" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خدماتنا" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewbager">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contain"
+            android:orientation="vertical"/>
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>
